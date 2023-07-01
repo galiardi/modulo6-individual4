@@ -1,0 +1,20 @@
+<header>
+  <h1>Tareas pendientes</h1>
+</header>
+<main>
+  <section>
+    {{#if todos}}
+      <ul>
+        {{#each todos}}
+          <li>-{{this}}</li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No hay tareas pendientes.</p>
+    {{/if}}
+  </section>
+</main>
+<footer>
+  <hr />
+  <address>-borbotonesJS 2023-</address>
+</footer>
